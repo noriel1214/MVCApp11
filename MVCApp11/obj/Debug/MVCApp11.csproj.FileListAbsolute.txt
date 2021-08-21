@@ -108,3 +108,4 @@ C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.dll
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.pdb
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.InitialModel.resources
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.csproj.GenerateResource.cache
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.CustomerAddMembershipTypeAndNewsLetter.resources
