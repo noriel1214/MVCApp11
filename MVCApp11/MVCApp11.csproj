@@ -191,6 +191,14 @@
     <Compile Include="Migrations\202108212241330_RemoveNameFromMembershipType.Designer.cs">
       <DependentUpon>202108212241330_RemoveNameFromMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108221915321_SaveMembershipTypeDateToDB.cs" />
+    <Compile Include="Migrations\202108221915321_SaveMembershipTypeDateToDB.Designer.cs">
+      <DependentUpon>202108221915321_SaveMembershipTypeDateToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108221923119_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202108221923119_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>202108221923119_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -292,6 +300,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108212241330_RemoveNameFromMembershipType.resx">
       <DependentUpon>202108212241330_RemoveNameFromMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108221915321_SaveMembershipTypeDateToDB.resx">
+      <DependentUpon>202108221915321_SaveMembershipTypeDateToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108221923119_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>202108221923119_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
