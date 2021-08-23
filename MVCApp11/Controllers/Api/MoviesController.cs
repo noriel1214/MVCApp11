@@ -12,79 +12,82 @@ using System.Data.Entity;
 namespace MVCApp11.Controllers.Api
 {
 
-        public class MoviesController : ApiController
+    public class MoviesController : ApiController
+    {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
         {
-            private ApplicationDbContext _context;
-
-            public MoviesController()
-            {
-                _context = new ApplicationDbContext();
-            }
-
-            public IEnumerable<MovieDto> GetMovies()
-            {
-            //return _context.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>);
-            return _context.Movies
-           .Include(m => m.Genre)
-           .ToList()
-           .Select(Mapper.Map<Movie, MovieDto>);
+            _context = new ApplicationDbContext();
         }
 
-            public IHttpActionResult GetMovie(int id)
-            {
-                var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+        public IEnumerable<MovieDto> GetMovies()
+        {
+        //return _context.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>);
+        return _context.Movies
+        .Include(m => m.Genre)
+        .ToList()
+        .Select(Mapper.Map<Movie, MovieDto>);
+    }
 
-                if (movie == null)
-                    return NotFound();
+        public IHttpActionResult GetMovie(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
 
-                return Ok(Mapper.Map<Movie, MovieDto>(movie));
-            }
+            if (movie == null)
+                return NotFound();
 
-            [HttpPost]
-            public IHttpActionResult CreateMovie(MovieDto movieDto)
-            {
-                if (!ModelState.IsValid)
-                    return BadRequest();
+            return Ok(Mapper.Map<Movie, MovieDto>(movie));
+        }
 
-                var movie = Mapper.Map<MovieDto, Movie>(movieDto);
-                _context.Movies.Add(movie);
-                _context.SaveChanges();
+        [HttpPost]
+    [Authorize(Roles = RoleName.CanManageMovies)]
+    public IHttpActionResult CreateMovie(MovieDto movieDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
 
-                movieDto.Id = movie.Id;
-                return Created(new Uri(Request.RequestUri + "/" + movie.Id), movieDto);
-            }
+            var movie = Mapper.Map<MovieDto, Movie>(movieDto);
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
 
-            [HttpPut]
-            public IHttpActionResult UpdateMovie(int id, MovieDto movieDto)
-            {
-                if (!ModelState.IsValid)
-                    return BadRequest();
+            movieDto.Id = movie.Id;
+            return Created(new Uri(Request.RequestUri + "/" + movie.Id), movieDto);
+        }
 
-                var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
+        [HttpPut]
+    [Authorize(Roles = RoleName.CanManageMovies)]
+    public IHttpActionResult UpdateMovie(int id, MovieDto movieDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
 
-                if (movieInDb == null)
-                    return NotFound();
+            var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
 
-                Mapper.Map(movieDto, movieInDb);
+            if (movieInDb == null)
+                return NotFound();
 
-                _context.SaveChanges();
+            Mapper.Map(movieDto, movieInDb);
 
-                return Ok();
-            }
+            _context.SaveChanges();
 
-            [HttpDelete]
-            public IHttpActionResult DeleteMovie(int id)
-            {
-                var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
+            return Ok();
+        }
 
-                if (movieInDb == null)
-                    return NotFound();
+        [HttpDelete]
+        [Authorize(Roles = RoleName.CanManageMovies)]
+        public IHttpActionResult DeleteMovie(int id)
+        {
+            var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
 
-                _context.Movies.Remove(movieInDb);
-                _context.SaveChanges();
+            if (movieInDb == null)
+                return NotFound();
 
-                return Ok();
-            }
+            _context.Movies.Remove(movieInDb);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
+}
 
