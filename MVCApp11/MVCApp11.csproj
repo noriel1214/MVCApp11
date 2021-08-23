@@ -247,6 +247,14 @@
     <Compile Include="Migrations\202108231620071_UpdateModels.Designer.cs">
       <DependentUpon>202108231620071_UpdateModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108231729066_SeedUser.cs" />
+    <Compile Include="Migrations\202108231729066_SeedUser.Designer.cs">
+      <DependentUpon>202108231729066_SeedUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108232019549_SeeUser1.cs" />
+    <Compile Include="Migrations\202108232019549_SeeUser1.Designer.cs">
+      <DependentUpon>202108232019549_SeeUser1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -559,6 +567,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108231620071_UpdateModels.resx">
       <DependentUpon>202108231620071_UpdateModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108231729066_SeedUser.resx">
+      <DependentUpon>202108231729066_SeedUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108232019549_SeeUser1.resx">
+      <DependentUpon>202108232019549_SeeUser1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,6 +10,7 @@ using System.Data.Entity;
 namespace MVCApp11.Controllers
 {
 
+    [AllowAnonymous]
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
