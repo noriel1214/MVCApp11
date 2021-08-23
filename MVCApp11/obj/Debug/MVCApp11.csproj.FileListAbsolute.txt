@@ -118,7 +118,6 @@ C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.Add
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddMovie.resources
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.ExpandMovieModel.resources
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.SeedGenre.resources
-C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.csproj.AssemblyReference.cache
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\AutoMapper.dll
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\System.Net.Http.Formatting.dll
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\System.Web.Http.dll
@@ -128,3 +127,7 @@ C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\System.Net.Http.Formatting.xm
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\System.Web.Http.xml
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\System.Web.Http.WebHost.xml
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.UpdateModels.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.SeedUser.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.SeeUser1.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddedUserAndOtherModelChanges.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddPhoneToApplicationUser.resources
