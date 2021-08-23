@@ -131,3 +131,7 @@ C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.See
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.SeeUser1.resources
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddedUserAndOtherModelChanges.resources
 C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddPhoneToApplicationUser.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\bin\Glimpse.Core.dll
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddRentalModelAndExpandMovieModel.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.Migrations.AddRentalsModel.resources
+C:\Users\Noriel\source\repos\MVCApp11\MVCApp11\obj\Debug\MVCApp11.csproj.AssemblyReference.cache
