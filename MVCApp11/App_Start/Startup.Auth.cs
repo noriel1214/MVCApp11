@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using MVCApp11.Models;
+using System.Configuration;
 
 namespace MVCApp11
 {
@@ -54,9 +55,10 @@ namespace MVCApp11
             //   consumerKey: "",
             //   consumerSecret: "");
 
+
             app.UseFacebookAuthentication(
-               appId: "578130163308822",
-               appSecret: "2fca4c30a78721683daf664ab7625a06");
+                appId: ConfigurationManager.AppSettings["FacebookAppId"],
+               appSecret: ConfigurationManager.AppSettings["FacebookAppSecret"]);
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
